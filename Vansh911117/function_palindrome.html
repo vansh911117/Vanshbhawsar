@@ -1,0 +1,28 @@
+<script>
+	function palindrome(p)
+	{
+		var n=p;
+		var rev=0;
+		var t=n;
+		while(n>0)
+		{
+			var r=n%10;
+			rev=rev*10+r;
+			n=parseInt(n/10);
+		}
+		if(rev==t)
+		{
+			console.log(t+' is palindrome');
+		}
+		else
+		{
+			console.log(t+' is not palindrome');
+		}
+}
+ palindrome(112211);
+ palindrome(12356);
+ palindrome(12321);
+ palindrome(98765);
+ palindrome(45654);
+ palindrome(78987);
+</script>
