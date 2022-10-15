@@ -1,0 +1,17 @@
+<script>
+	var n=prompt("enter a number");
+	var s=n.length;
+	n=parseInt(n);
+	var t=n;
+	var rev=0;
+	while(n>0)
+	{
+		var r=n%10;
+		rev=rev+r**s;
+		n=parseInt(n/10)
+	}
+	if(rev==t)
+		console.log(t+" is armstrong");
+	else
+		console.log(t+" is not armstrong")
+</script>

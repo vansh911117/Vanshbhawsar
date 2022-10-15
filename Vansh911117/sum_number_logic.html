@@ -1,0 +1,22 @@
+<script>
+	function seprate(m)
+	{
+		var n=m;
+		var s=n.length;
+		n=parseInt(n);
+		var rev=0;
+		var t=n
+		while(n>0)
+			{
+				var r=n%10;
+			    rev=rev+r**s;
+				n=parseInt(n/10);
+			}
+			if(rev==t)
+				console.log(t+' is arms')
+			else
+				console.log(t+' is not arms')
+			return t
+	}
+	console.log(seprate(164));
+</script>
