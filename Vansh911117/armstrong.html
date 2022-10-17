@@ -1,17 +1,28 @@
 <script>
-	var n=prompt("enter a number");
-	var s=n.length;
-	n=parseInt(n);
-	var t=n;
-	var rev=0;
-	while(n>0)
-	{
-		var r=n%10;
-		rev=rev+r**s;
-		n=parseInt(n/10)
-	}
-	if(rev==t)
-		console.log(t+" is armstrong");
+	function fibonacci(f)
+	 {
+		var n=f;
+	var a=0;
+	var b=1;
+	if(n<=0)
+		console.log("please enter valid number");
+	else if(n==1)
+		{
+             console.log(a);
+		}
 	else
-		console.log(t+" is not armstrong")
+	{
+     console.log(a);
+     console.log(b);
+     for(var i=1;i<=n-2;i++)
+     {
+     	var c=a+b;
+     	console.log(c);
+     	a=b;
+     	b=c;
+     }
+	}
+	}
+    fibonacci(10);
+    fibonacci(8);
 </script>

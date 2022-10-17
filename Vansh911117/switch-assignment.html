@@ -1,0 +1,154 @@
+<script>
+	var choice=prompt("enter your choice")
+	switch(choice)
+	{
+		case '1':
+		function factorial(n)
+		{
+			var f=1;
+			for(var i=1;i<=n;i++)
+			{
+				f=f*i
+			}
+			console.log('factorial of '+n+' is '+f)
+		}
+		factorial(5);
+		factorial(8);
+		factorial(10);
+		break;
+		case '2':
+		console.log("fibonacci");
+        function fibonacci(f)
+	 {
+		var n=f;
+	var a=0;
+	var b=1;
+	if(n<=0)
+		console.log("please enter valid number");
+	else if(n==1)
+		{
+             console.log(a);
+		}
+	else
+	{
+     console.log(a);
+     console.log(b);
+     for(var i=1;i<=n-2;i++)
+     {
+     	var c=a+b;
+     	console.log(c);
+     	a=b;
+     	b=c;
+     }
+	}
+	}
+    fibonacci(10);
+    fibonacci(8);
+		break;
+		case '3':
+		console.log("prime number");
+		function primeno(p)
+	{
+		var n=p;
+		if(n==0 || n==1)
+		{
+			console.log(n+' is not prime number');
+		}
+		else
+		{
+			for(i=2;i<=n;i++)
+			{
+				if(n%i==0)
+				{
+					break;
+				}
+			}
+			if(n==i)
+			{
+				console.log(n+' is prime number');
+			}
+			else
+			{
+				console.log(n+' is not prime number')
+			}
+		}
+	}
+	primeno(10);
+	primeno(5);
+	primeno(55);
+	primeno(7);
+	primeno(11);
+	primeno(25);
+    break;
+		case '4':
+		console.log("armstrong");
+		function armstrong(a)
+	 {
+		var n=a;
+	var s=n.length;
+	n=parseInt(n);
+	var rev=0;
+	var t=n;
+	while(n>0)
+	{
+		var r=n%10;
+		rev=rev+r**s;
+		n=parseInt(n/10)
+	}
+	if(rev==t)
+		console.log(t+" is armstrong");
+	else
+		console.log(t+" is not armstrong")
+	}
+	armstrong(125);
+	armstrong(196);
+	armstrong(952);
+
+		break;
+		case '5':
+		console.log("palindrome");
+		function palindrome(p)
+	{
+		var n=p;
+		var rev=0;
+		var t=n;
+		while(n>0)
+		{
+			var r=n%10;
+			rev=rev*10+r;
+			n=parseInt(n/10);
+		}
+		if(rev==t)
+		{
+			console.log(t+' is palindrome');
+		}
+		else
+		{
+			console.log(t+' is not palindrome');
+		}
+}
+ palindrome(112211);
+ palindrome(12356);
+ palindrome(12321);
+ palindrome(98765);
+ palindrome(45654);
+ palindrome(78987);
+	break;
+		case '6':
+		console.log("even odd");
+		function even_odd(e)
+		{
+			if(e%2==0)
+				console.log(e+' is even');
+			else
+				console.log(e+' is odd');
+		}
+		even_odd(10);
+		even_odd(55);
+		even_odd(85);
+
+		break;
+		default:
+		console.log('invalid choice');
+	}
+</script>
