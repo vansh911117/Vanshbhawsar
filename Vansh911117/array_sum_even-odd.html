@@ -1,0 +1,26 @@
+<script>
+	var a=[];
+	var s=parseInt(prompt("enter size of array"));
+	console.log("enter "+s+" elements");
+	for(var i=0;i<s;i++)
+	{
+		a[i]=parseInt(prompt("enter a value"))
+	}
+	var sum_even=0;
+	var sum_odd=0;
+	{
+		for(var i of a)
+		{
+			if(i%2==0)
+			{
+				sum_even=sum_even+i;
+			}
+			else
+			{
+				sum_odd=sum_odd+i;
+			}
+		}
+	}
+	console.log("sum of even digit is "+sum_even);
+	console.log("sum of odd digit is "+sum_odd)
+</script>

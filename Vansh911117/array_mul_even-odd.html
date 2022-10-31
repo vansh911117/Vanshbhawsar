@@ -1,0 +1,26 @@
+<script>
+	var a=[];
+	var s=parseInt(prompt("enter size of array"));
+	console.log("enter "+s+" elements");
+	for(var i=0;i<s;i++)
+	{
+		a[i]=parseInt(prompt("enter a value"))
+	}
+	var mul_even=1;
+	var mul_odd=1;
+	{
+		for(var i of a)
+		{
+			if(i%2==0)
+			{
+				mul_even=mul_even*i;
+			}
+			else
+			{
+				mul_odd=mul_odd*i;
+			}
+		}
+	}
+	console.log("mul of even digit is "+mul_even);
+	console.log("mul of odd digit is "+mul_odd)
+</script>

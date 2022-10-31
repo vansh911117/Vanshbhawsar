@@ -1,12 +1,29 @@
-<h2 id="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</h2>
-<button onclick="chide()" >Java</button>
+<button onclick="cshow()" onchange="chide()">java</button>
+<button onclick="pshow()" onchange="chide()">python</button>
+<button>html</button>
+<button>java script</button>
+<button>react js</button>
+<h2 id="p1" style="display: none;">helloo</h2>
 <script>
-	function chide()
+	function cshow()
 	 {
-		document.getElementById('p1').style.display="block"
-	}
+	   document.getElementById('p1').style.display="block"	
+	 }
+	 function chide()
+	 {
+	   document.getElementById('p1').style.display="none"	
+	 }
+
+
 </script>
-<button>Java</button>
-<button>Java</button>
-<button>Java</button>
-<button>Java</button>
+<h2 id="p2" style="display: none;">hiiiii</h2>
+<script>
+	function pshow()
+	 {
+	   document.getElementById('p2').style.display="block"	
+	 }
+	 function chide()
+	 {
+	   document.getElementById('p1').style.display="none"	
+	 }
+</script>

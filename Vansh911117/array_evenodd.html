@@ -1,0 +1,16 @@
+<script>
+	var a=[];
+	var s=parseInt(prompt("enter size of array"));
+	console.log("enter "+s+" elements")
+	for(var i=0;i<s;i++)
+	{
+		a[i]=parseInt(prompt("enter a value"));
+	}
+	for(var i of a)
+	{
+		if(i%2==0)
+			console.log(i+" is even")
+		else
+			console.log(i+" is odd")
+	}
+</script>

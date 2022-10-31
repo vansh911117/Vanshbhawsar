@@ -1,0 +1,21 @@
+<script>
+	var a=[];
+	var s=parseInt(prompt("enter size of array"));
+	console.log("enter "+s+" elements");
+	for(var i=0;i<s;i++)
+	{
+		a[i]=parseInt(prompt("enter a value"))
+	}
+	var b=0;
+	for(var i of a)
+	{
+		var r=a%10;
+		if(r>b)
+		{
+			b=r;
+		}
+		a=parseInt(a/10);
+	}
+	console.log(b)
+	
+</script>
