@@ -1,0 +1,18 @@
+<script>
+	var a=[5,6,56,41,31,8,24,69];
+	for(var n of a)
+	{
+		if(n==0||n==1)
+			console.log(n+" is not prime number");
+		for(i=2;i<=n;i++)
+		{
+			if(n%i==0)
+				break;
+		}
+		if(n==i)
+			console.log(n+" is prime number");
+		else console.log(n+" is not prime number");
+
+
+	}
+</script>
